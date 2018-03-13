@@ -25,7 +25,7 @@ SECRET_KEY = '3=ufpq!@!k^kh#t0l9ede1bh!mzel^=puj#7%l9!()+(mvxjs)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blog-prj-ddnro.c9users.io']
+ALLOWED_HOSTS = ['blog-prj-ddnro.c9users.io','blog-prj-stream3.herokuapp.com']
 
 
 # Application definition
