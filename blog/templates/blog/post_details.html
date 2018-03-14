@@ -1,0 +1,17 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block styles %}
+{{ block.super }}
+
+{% endblock styles %}
+
+{% block content %}
+
+<h1>post_details.html</h1>
+
+{{  post.title }}</br>
+{{  post.content }}
+
+
+{% endblock content %}
