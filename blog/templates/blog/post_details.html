@@ -10,8 +10,19 @@
 
 <h1>post_details.html</h1>
 
-{{  post.title }}</br>
-{{  post.content }}
-
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>{{ post.title }}</h1>
+			{% if post.image %}
+			<img src="{{ MEDIA_URL }}{{post.image}}" style="max-width: 400px;"/>
+			{% endif %}
+			<p>{{ post.content|linebreaksbr }}</p>
+			<form action="{% url 'edit_post' post.id %}"><input type="submit" value="Edit"></form>
+			<p>Views: {{ post.views }}</p>
+			<button class="btn btn-default" onclick="location.href='{% url 'post_list' %}'">Back To Blog</button>
+		</div>
+	</div>
+</div>
 
 {% endblock content %}
